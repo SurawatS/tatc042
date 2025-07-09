@@ -16,9 +16,14 @@
             src: url('font/Regular.otf') format('truetype');
         }
 
-        body {
-            font-family: 'Regular', sans-serif;
-        }
+            body {
+    font-family: 'Regular', sans-serif;
+    background-image: url('img/ScneryNight.jpg'); /* เปลี่ยนเป็น path ของภาพหรือ gif ที่ต้องการ */
+    background-repeat: no-repeat;
+    background-size: cover; /* ให้ภาพขยายเต็มพื้นที่ */
+    background-position: center center;
+    background-attachment: fixed; /* ภาพไม่เลื่อนเมื่อเลื่อนหน้าเว็บ */
+}
         /* ส่วนหัว */
         .header-tatc {
             background-color: #6495ED;
