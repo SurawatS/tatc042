@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thai-Austrian Technical College</title>
+    <link rel="shortcut icon" href="img/tatclogo.gif" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+         @font-face {
+            font-family: 'Regular';
+            src: url('font/Regular.otf') format('truetype');
+        }
+
+        body {
+            font-family: 'Regular', sans-serif;
+        }
+        /* ส่วนหัว */
+        .header-tatc {
+            background-color: #6495ED;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-tatc .container-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header-tatc img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .header-tatc .title {
+            line-height: 1.2;
+        }
+
+        .header-tatc .title h2 {
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: #333;
+        }
+
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: white;
+            position: relative;
+            padding: 0 10px;
+            margin: 0 8px;
+        }
+
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .navbar-brand:hover {
+            color: #006eff;
+        }
+
+        /* เส้นกั้น | แบบอยู่ตรงกลางและเว้นระยะ */
+        .navbar-custom .nav-item:not(:last-child) .nav-link::after {
+            content: '|';
+            position: absolute;
+            right: -10px;
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        .ita-logo {
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ส่วนหัว -->
+    <div class="header-tatc">
+        <div class="container-header">
+            <img src="img/tatclogo.gif" alt="tatclogo" />
+            <div class="title">
+                <h2>วิทยาลัยเทคนิคสัตหีบ</h2>
+                <div style="font-size: 15px;">Thai-Austrian Technical College</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            เกี่ยวกับ วิทยาลัยเทคนิคสัตหีบ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- เปลี่ยนตรงนี้ -->
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalHistory">ประวัติ</a></li>
+                            <li><a class="dropdown-item" href="#">โครงสร้าง</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">คณะและหน่วยงาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">รับสมัครนักศึกษา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">วิจัยและบริการวิชาการ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ติดต่อ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            เว็บไซต์วิทยาลัย
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="http://www.tatc.ac.th/?usid=20100887&language=Th">เว็บไซต์หลัก</a></li>
+                            <li><a class="dropdown-item" href="#">แผนที่</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/ITALogo.png" alt="ITA Logo" class="ita-logo" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Slide1.jpg" class="d-block w-100" alt="Slide1" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide2.jpg" class="d-block w-100" alt="Slide2" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide3.jpg" class="d-block w-100" alt="Slide3" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide4.jpg" class="d-block w-100" alt="Slide4" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide5.jpg" class="d-block w-100" alt="Slide5" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide6.jpg" class="d-block w-100" alt="Slide6" />
+            </div>
+            <div class="carousel-item">
+                <img src="img/Slide7.jpg" class="d-block w-100" alt="Slide7" />
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <ul class="nav nav-tabs justify-content-center bg-light mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">ข่าววิทยาลัย</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ข่าวงานวิจัย/รางวัล</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ข่าวนักศึกษา</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ข่าวรับสมัครนักศึกษา</a>
+            </li>
+        </ul>
+
+        <!-- รายการข่าวแบบ Card -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/news1.jpg" class="card-img-top" alt="ข่าว 1" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            เข้าร่วมการอบรมหลักสูตร “ส่งเสริมสุขภาพ ความปลอดภัย และสิ่งแวดล้อม เพื่ออุตสาหกรรมที่ยั่งยืน”
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="bi bi-calendar"></i> 📅 03/07/2568
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/news2.jpg" class="card-img-top" alt="ข่าว 2" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            วิทยาลัยเทคนิคเชียงใหม่ เข้าศึกษาดูงานด้านการจัดการเรียนการสอน สาขาช่างอากาศยาน
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="bi bi-calendar"></i> 📅 03/07/2568
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/news3.jpg" class="card-img-top" alt="ข่าว 3" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            เข้าร่วมพิธีเจริญพระพุทธมนต์ถวายพระพรชัยมงคลแด่พระบาทสมเด็จพระเจ้าอยู่หัวและพระบรมวงศานุวงศ์ ประจำปีพุทธศักราช 2568 ครั้งที่ 6 ประจำเดือนมิถุนายน
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="bi bi-calendar"></i> 📅 03/07/2568
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/news4.jpg" class="card-img-top" alt="ข่าว 4" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            โครงการอบรมพัฒนาศักยภาพผู้เรียนด้าน “การสร้างจิตสำนึกในการเป็นผู้ประกอบการ และการเขียนแผนธุรกิจ” ประจำปีการศึกษา 2568
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="bi bi-calendar"></i> 📅 03/07/2568
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/news5.jpg" class="card-img-top" alt="ข่าว 5" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            โครงการบริจาคโลหิต เพื่อถวายเป็นพระราชกุศล เฉลิมพระเกียรติเนื่องในโอกาสวันเฉลิมพระชนมพรรษา พระบาทสมเด็จพระปรเมนทรรามาธิบดีศรีสินทรมหาวชิราลงกรณ พระวชิรเกล้าเจ้าอยู่หัว 28 กรกฎาคม 2568
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="bi bi-calendar"></i> 📅 03/07/2568
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ประวัติ -->
+    <div class="modal fade" id="modalHistory" tabindex="-1" aria-labelledby="modalHistoryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHistoryLabel">ประวัติ วิทยาลัยเทคนิคสัตหีบ (ฉบับย่อ)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        ที่ตั้ง<br>
+เลขที่ 193 หมู่ 3 ถนนสุขุมวิท ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี มีเนื้อที่ 64 ไร่ 3 งาน 20 ตารางวา
+                    </p>
+                    <p>
+                        การจัดตั้ง<br>
+          วิทยาลัยเทคนิคสัตหีบ ก่อตั้งขึ้นจากความร่วมมือระหว่างรัฐบาลไทยและรัฐบาลออสเตรีย โดยได้รับความช่วยเหลือด้านวิชาการ เครื่องจักร และผู้เชี่ยวชาญจากออสเตรีย
+          ส่วนรัฐบาลไทยรับผิดชอบด้านที่ดินและการก่อสร้างอาคารเรียนและโรงฝึกงาน
+                    </p>
+                    <p>
+                        วัตถุประสงค์<br>
+         1. เพื่อผลิตช่างเทคนิคให้สอดคล้องกับความต้องการของสถานประกอบการ<br>
+         2. เพื่อให้นักเรียนนัก-ศึกษา เกิดทักษะตรงกับมาตราฐานช่างเทคนิค และสถานประกอบการ<br>
+         3. เพื่อพัฒนาแผนการเรียนการสอนกับช่างอุตสาหกรรมให้สอดคล้องกับการพัฒนา ในภาคตะวันออก
+                    </p>
+                    <p>
+                        ประวัติสถานศึกษา<br>
+                        วิทยาลัยเทคนิคสัตหีบก่อตั้งเมื่อวันที่ 1 กันยายน พ.ศ. 2512 จากความร่วมมือระหว่างรัฐบาลไทยและออสเตรีย โดยมีการสนับสนุนด้านอุปกรณ์ เครื่องจักร
+                        และบุคลากรจากออสเตรีย และต่อมาในปี 2522 ได้ยกระดับเป็น "วิทยาลัยเทคนิคสัตหีบ" (Thai-Austrian Technical College - TATC) ตลอดหลายปีที่ผ่านมา
+                        วิทยาลัยได้รับรางวัลพระราชทานหลายครั้ง และได้รับคัดเลือกให้เป็นสถานศึกษาต้นแบบ
+                        ศูนย์ความเป็นเลิศ และศูนย์พัฒนากำลังคนอาชีวศึกษาในเขตเศรษฐกิจพิเศษภาคตะวันออก (EEC)
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-5 p-4">
+        <div class="container">
+            <p class="mb-1"><h4>ติดต่อ วิทยาลัยเทคนิคสัตหีบ</h4></p>
+            <p class="mb-0">📍 Location. : กม.160 193 หมู่ 3 ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี 20250</p>
+            <p class="mb-0">📞 Tel. : 038-238398 , 038-238527 | โทรสาร 038-237268</p>
+            <p class="mb-0">📧 E-mail : saraban@tatc.ac.th</p>
+            <hr>
+            <p class="mb-0">จัดทำโดย : Surawat S. 68319010042 IT.4/2</p><img src="img/among-us-twerk.gif" height="30"/>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
